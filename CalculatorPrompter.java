@@ -35,6 +35,9 @@ public class CalculatorPrompter {
             case "ellipse":
                 shapeObject = new Ellipse();
                 break;
+            case "pyramid":
+                shapeObject = new RectangularPyramid();
+                break;
             case "sphere":
                 shapeObject = new Sphere();
                 break;
@@ -87,6 +90,8 @@ public class CalculatorPrompter {
         System.out.println("-> cylinder");
         addDelay();
         System.out.println("-> ellipse");
+        addDelay();
+        System.out.println("-> sphere");
         addDelay();
     }
 
