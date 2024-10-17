@@ -17,34 +17,36 @@ public class CalculatorPrompter {
         ShapeIO shapeObject = null;
 
         switch (shapeString) {
+            case "1":
             case "polygon":
                 shapeObject = new Polygon();
                 break;
+            case "2":
             case "circle":
                 shapeObject = new Circle();
                 break;
+            case "4":
             case "cone":
                 shapeObject = new Cone();
                 break;
+            case "5":
             case "cylinder":
                 shapeObject = new Cylinder();
                 break;
-            case "rectangular pyramid":
-                shapeObject = new RectangularPyramid();
-                break;
-            case "ellipse":
-                shapeObject = new Ellipse();
-                break;
+            case "3":
             case "pyramid":
                 shapeObject = new RectangularPyramid();
                 break;
+            case "6":
+            case "ellipse":
+                shapeObject = new Ellipse();
+                break;
+            case "7":
             case "sphere":
                 shapeObject = new Sphere();
                 break;
-            default:
-                System.out.println("Invalid shape. Please try again.");
-                promptForShape();
         }
+
         shapeObject.getSideLengths(scanner);
 
         shapeObject.printCalculations();
@@ -75,23 +77,23 @@ public class CalculatorPrompter {
 
     public void welcomePrint() {
         addDelay();
-        System.out.println("What shape would you like analyze?");
+        System.out.println("What shape would you like to analyze?");
         addDelay(300);
         System.out.println("We currently offer:");
         addDelay();
-        System.out.println("-> polygon (regular)");
+        System.out.println("1 -> polygon (regular)");
         addDelay();
-        System.out.println("-> circle");
+        System.out.println("2 -> circle");
         addDelay();
-        System.out.println("-> pyramid (rectangular)");
+        System.out.println("3 -> pyramid (rectangular)");
         addDelay();
-        System.out.println("-> cone");
+        System.out.println("4 -> cone");
         addDelay();
-        System.out.println("-> cylinder");
+        System.out.println("5 -> cylinder");
         addDelay();
-        System.out.println("-> ellipse");
+        System.out.println("6 -> ellipse");
         addDelay();
-        System.out.println("-> sphere");
+        System.out.println("7 -> sphere");
         addDelay();
     }
 

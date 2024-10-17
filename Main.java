@@ -5,7 +5,7 @@ public final class Main {
         System.out.println("HELLO!! WELCOME TO THE SHAPE CALCULATOR :D\n");
         try {
             Thread.sleep(700);
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
