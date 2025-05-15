@@ -1,6 +1,6 @@
 
 ### Shape Calculator
-This calculator uses a scanner to recieve input and spit out the features of a 2D or 3D shape given the dimensions.
+This calculator uses a scanner to recieve input and calulate the surface area, volume, and perimeter of a 2D or 3D shape with the dimensions provided.
 Available shapes:
 - regular polygon
 -  circle
