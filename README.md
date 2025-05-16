@@ -10,4 +10,4 @@ Available shapes:
 -  cylinder
 -  cone
 
-Click here to visit the best part of this repository and scroll to line 25: [`shapes/Ellipse`](shapes/Ellipse.java)! :D
+Click here to visit the best part of this repository and scroll to line 42: [`shapes/Ellipse`](shapes/Ellipse.java)! :D

@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 import shapes.*;
 
+/**
+ * Filename: CalculatorPrompter.java
+ * 
+ * @author Tina Hague
+ * @author Alexander Hamilton
+ * 
+ * Last Updated: 17 Oct 2024
+ */
 public class CalculatorPrompter {
 
     Scanner scanner = new Scanner(System.in);
@@ -53,7 +61,10 @@ public class CalculatorPrompter {
         restart();
     }
 
-    // if the calculation has been printed in the terminal, the calculator will ask to restart or close
+    /**
+     * Asks the user if they would like to restart the calculator after 
+     * completing a calculation
+     */
     public void restart() {
         System.out.println("DO YOU WISH TO RESTART?");
         System.out.println("-> yes");
@@ -75,6 +86,9 @@ public class CalculatorPrompter {
         }
     }
 
+    /**
+     * Prints all available options of the calculator
+     */
     public void welcomePrint() {
         addDelay();
         System.out.println("What shape would you like to analyze?");
@@ -97,10 +111,18 @@ public class CalculatorPrompter {
         addDelay();
     }
 
+    /**
+     * Adds a delay of 600 milliseconds
+     */
     private void addDelay() {
         addDelay(600);
     }
 
+    /**
+     * Adds a delay for a the given duration of milliseconds
+     * 
+     * @param duration
+     */
     private void addDelay(long duration) {
         try {
             Thread.sleep(duration);

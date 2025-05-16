@@ -1,3 +1,11 @@
+/**
+ * Filename: Main.java
+ * 
+ * @author Tina Hague
+ * @author Alexander Hamilton
+ * 
+ * Last Updated: 17 Oct 2024
+ */
 public final class Main {
 
     public static void main(String[] args) {
